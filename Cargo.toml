@@ -1,0 +1,15 @@
+[package]
+name = "cloudflareDetectIP"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+rayon = "*"
+reqwest = {version = "*" , features = [
+   "blocking" , "cookies" 
+]}
+
+colored = "*"
+regex = "*"
+tld_extract = "0.1.0"
+trust-dns-resolver = "0.23"
